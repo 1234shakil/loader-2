@@ -1,0 +1,183 @@
+*{
+    border: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    align-items: flex-start;
+    justify-content: center;
+}
+#content div{
+    width: 50%;
+    padding: 10px;
+    background-color: var(--clr);
+    color: aliceblue;
+    transition: 1s;
+    height: 150px;
+    overflow: scroll;
+}
+#content div:active{
+    transform: scale(0) rotate(360deg) skew(300deg);
+}
+
+
+/* looder section starting */
+#loder{
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loder p{
+    position: absolute;
+    color: antiquewhite;
+    transform: rotate(0deg);
+    font-size: 20px;
+    top: 46%;
+    right: 48.2%;
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loading{
+    1%{
+        transform: scale(.2) translateX(0px);
+    }20%{
+        transform: scale(.4) translateX(10px);
+    }40%{
+        transform: scale(.6) translateX(20px);
+    }60%{
+        transform: scale(.8) translateX(0px);
+    }80%{
+        transform: scale(1) translateX(-10px);
+    }100%{
+        transform: scale(.1) translateX(-20px);
+    }
+}
+
+#loder .lood{
+    width: 140px;
+    height: 140px;
+    border-top: 7px solid rgb(0, 159, 244);
+    border-right: 7px solid rgb(0, 159, 244);
+    border-radius: 50%;
+    border-style: dotted;
+    animation-name:lood ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes lood{
+    1%{
+        transform: rotate(0deg);
+    }50%{
+        
+    }100%{
+        transform: rotate(360deg);
+
+    }
+}
+#loder .lood-1{
+    width: 100px;
+    height: 100px;
+    border-left: 5px solid rgb(237, 0, 0);
+    border-bottom: 5px solid rgb(218, 8, 8);
+    border-radius: 50%;
+    border-style: dotted;
+    animation-name:lood-1 ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@keyframes lood-1{
+    1%{
+        transform: rotate(0deg);
+    }50%{
+        
+    }100%{
+        transform: rotate(360deg);
+        
+    }
+}
+#loder .lood-2{
+        width: 70px;
+        height: 70px;
+        border-left: 4px solid rgb(109, 177, 7);
+        border-bottom: 4px solid rgb(109, 177, 7);
+        border-radius: 50%;
+        border-style: dotted;
+        animation-name:lood-2 ;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    @keyframes lood-2{
+        1%{
+            transform: rotate(0deg);
+        }50%{
+           
+        }100%{
+            transform: rotate(360deg);
+    
+        }
+    }
+#loder .lood-3{
+    width: 40px;
+    height: 40px;
+    border-left: 3px solid rgb(237, 0, 0);
+    border-bottom: 3px solid rgb(218, 8, 8);
+    border-radius: 50%;
+    border-style: dotted;
+    animation-name:lood-3 ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@keyframes lood-3{
+    1%{
+        transform: rotate(0deg);
+    }50%{
+        
+    }100%{
+        transform: rotate(360deg);
+        
+    }
+}
+#loder .lood-4{
+        width: 10px;
+        height: 10px;
+        border-right: 4px solid rgb(109, 177, 7);
+        border-top: 4px solid rgb(109, 177, 7);
+        border-radius: 50%;
+        border-style: dotted;
+        animation-name:lood-4 ;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
